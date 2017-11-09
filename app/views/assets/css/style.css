@@ -1,0 +1,26 @@
+#header {
+	background-color: black;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+	color : white;
+	padding: 10px;
+	padding-left: 600px;
+}
+
+body {
+	background-image: url("images/backgr.jpg");
+}
+
+#log {
+	padding: 10px;
+}
+
+#wonn {
+	color: white;
+	margin: 10px;
+	font-size: 200%;
+}
+
