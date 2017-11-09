@@ -46,4 +46,12 @@ class Dice extends Controller {
         echo json_encode($result);
     }    
 
+
+
+    public function play() {
+        $data= [];
+        $this->view("dice/play", $data);
+    }
 }
+
+
