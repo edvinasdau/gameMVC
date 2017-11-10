@@ -21,13 +21,16 @@ class Game {
     public function getTopWinners(int $count): array
     {
         // TODO: Implement getTopWinners() method.
-        return $this->db->select (("SELECT result FROM stats ORDER BY result DESC LIMIT $count"),["count" => $count]);
+        return $this->db->select ("SELECT result, username FROM stats ORDER BY result DESC LIMIT :count",["count" => $count]);
+
+   
+
     }
 
     public function getTopPlayers(int $count): array
     {
         // TODO: Implement getTopPlayers() method.
-        return $this->db->select ("SELECT username, count(*) as most FROM stats GROUP BY username ORDER BY most DESC LIMIT $count");
+        return $this->db->select ("SELECT username, count(*) as most FROM stats GROUP BY username ORDER BY most DESC LIMIT :count",["count" => $count]);
     }
 
         public function toDB(int $toDB)

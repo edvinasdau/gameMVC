@@ -25,7 +25,7 @@ class Dice extends Controller {
     }
 
     public function getTopWinners() {
-
+        
         header("Content-type:application/json");
 
         $game = $this->model('Game');

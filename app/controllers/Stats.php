@@ -18,7 +18,7 @@ class Stats extends Controller {
 
         $game = $this->model('Game');
 
-        $data['my_stats'] = $game->getTopWinners(5);
+        //$data['my_stats'] = $game->getTopWinners(5);
         $data['title'] = "CA Dice Game";
         $data['header'] = "Top players";
         $data['body'] = "Here we have best wins";
