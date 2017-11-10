@@ -33,11 +33,10 @@ class Game {
         return $this->db->select ("SELECT username, count(*) as most FROM stats GROUP BY username ORDER BY most DESC LIMIT :count",["count" => $count]);
     }
 
+
         public function toDB(int $toDB)
     {
-        // TODO: Implement getTopPlayers() method.
-        return $this->db->insert ("INSERT INTO stats (username, result, time)
-            VALUES (:username, :result, :time)");
+        return $this->db->insert ("INSERT INTO stats (username, result, ip)", ["username" => $username, "result" => $result, "ip" => $ip]);
     }
 
 }
