@@ -16,7 +16,6 @@ class Stats extends Controller {
 
     public function top() {
 
-
         $game = $this->model('Game');
 
         $data['my_stats'] = $game->getTopWinners(5);

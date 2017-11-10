@@ -21,16 +21,12 @@
         </div>
     </div>
     <div class="row">
-        <pre>
-            <?php print_r($data); ?>
-        </pre>
+
         <table class="table">
         	<?php
-
         	foreach ($data['my_stats'] as $row) {
         		echo "<tr><td>" . $row['username']. "</td>
-        		<td>" . $row['result']. "</td>
-        		</tr>";      	 
+        		<td>" . $row['result']. "</td></tr>";      	 
         	}
         	?>
         </table>

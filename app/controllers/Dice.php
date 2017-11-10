@@ -47,6 +47,10 @@ class Dice extends Controller {
     }    
 
 
+        public function toDB() {
+            $game = $this->model('Game');
+
+    }
 
     public function play() {
         $data['title'] = "Dice game";

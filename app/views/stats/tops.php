@@ -40,6 +40,6 @@
     </table>
 </div>
 </div>
-<script src="../app/views/assets/js/stats.js"></script>
+<script src="/Edvinas/gameMVC/app/views/assets/js/stats.js"></script>
 </body>
 </html>
