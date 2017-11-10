@@ -5,4 +5,4 @@
 	session_destroy();
 	$_SESSION = null;
 
-	header("Location: /Edvinas/gameMVC/dice/login");
+	header("Location: ../dice/login");

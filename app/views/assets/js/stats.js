@@ -1,6 +1,6 @@
   console.log("Stats loaded.."); 
 
- $.getJSON("/Edvinas/gameMVC/Dice/getTopWinners",
+ $.getJSON("../Dice/getTopWinners",
 
     function(result){
         console.log(result);
@@ -12,7 +12,7 @@
     });
 
 
-    $.getJSON("/Edvinas/gameMVC/Dice/getTopPlayers",
+    $.getJSON("../Dice/getTopPlayers",
         function(result){
         //console.log(result);
         $.each(result, function(i, field){

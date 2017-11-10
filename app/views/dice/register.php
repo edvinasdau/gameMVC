@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">	
-	<link rel="stylesheet" type="text/css" href="/Edvinas/gameMVC/app/views/assets/css/style.css"> 
+	<link rel="stylesheet" type="text/css" href="../app/views/assets/css/style.css"> 
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 	<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">	
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	   
@@ -25,7 +25,7 @@
 					<input id="pw" type="password" name="password" placeholder="password">
 					<input id="pw_r" type="password" name="repeat_password" placeholder="repeat_password">
 					<input id="reg" type="submit" name="registruotis" class="btn btn-warning" value="Register">
-					<a href="/Edvinas/gameMVC/dice/login" class="btn btn-success">Login</a>
+					<a href="../dice/login" class="btn btn-success">Login</a>
 				</form>
 			</div>
 		</div>
