@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	  <title></title>
+	  <title><?= $data['title']; ?></title>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">	
@@ -17,14 +18,14 @@
 	<div class="container-fluid">
 		<div id="header" class="row">
 			<h1><i class="fa fa-cubes" aria-hidden="true"></i> Dice game <i class="fa fa-cubes" aria-hidden="true"></i></h1>
-		</div>
+		</div><h1><?= $data['header']; ?></h1>
 		<div id="log" class="row">
 			<div class="col-sm-8">
 			</div>
 			<div class="col-sm-4">
 				<form method="POST">
-					<a href="logout.php" class="btn btn-danger">Logout</a><br><br>
-					<a href="stats.php" class="btn btn-info">Stats</a>
+					<a href="/Edvinas/gameMVC/app/views/dice/logout" class="btn btn-danger">Logout</a><br><br>
+					<a href="/Edvinas/gameMVC/app/views/stats" class="btn btn-info">Stats</a>
 				</form>
 			</div>
 		</div>

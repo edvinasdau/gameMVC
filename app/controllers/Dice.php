@@ -49,9 +49,22 @@ class Dice extends Controller {
 
 
     public function play() {
-        $data= [];
+        $data['title'] = "Dice game";
+        $data['header'] = "Lets play dices";
         $this->view("dice/play", $data);
     }
+
+    public function login() {
+        $data= [];
+        $this->view("dice/login", $data);
+        $game = $this->model('Game');
+    }
+
+    public function register() {
+        $data= [];
+        $this->view("dice/register", $data);
+        $game = $this->model('Game');
+    }    
 }
 
 

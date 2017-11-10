@@ -11,7 +11,7 @@ h1 {
 }
 
 body {
-	background-image: url("images/backgr.jpg");
+	background-image: url("/Edvinas/gameMVC/app/views/assets/images/backgr.jpg");
 }
 
 #log {
