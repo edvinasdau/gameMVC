@@ -10,7 +10,7 @@ class Dice extends Controller {
         $result = $game->getAllGames();
 
 
-    	echo json_encode($result);
+       // echo json_encode($result);
     }
 
     public function myGames() {
@@ -21,18 +21,18 @@ class Dice extends Controller {
         $result = $game->getUserGames($_SESSION['username']);
 
 
-        echo json_encode($result);
+        //echo json_encode($result);
     }
 
     public function getTopWinners() {
-        
+
         header("Content-type:application/json");
 
         $game = $this->model('Game');
         $result = $game->getTopWinners(5);
 
 
-        echo json_encode($result);
+        //echo json_encode($result);
     }
 
     public function getTopPlayers() {
@@ -47,28 +47,18 @@ class Dice extends Controller {
     }    
 
 
-        public function toDB() {
-            $game = $this->model('Game');
+    public function toDB() {
+       $game = $this->model('Game');
+     
+       echo $game->storeResult("Fake user", $_POST['result'], $_SERVER['REMOTE_ADDR']);
 
-    }
+   }
 
-    public function play() {
+   public function play() {
+
         $data['title'] = "Dice game";
-        $data['header'] = "Lets play dices";
-        $this->view("dice/play", $data);
-    }
 
-    public function login() {
-        $data= [];
-        $this->view("dice/login", $data);
-        $game = $this->model('Game');
-    }
+         $this->view("dice/play", $data);
+   }
 
-    public function register() {
-        $data= [];
-        $this->view("dice/register", $data);
-        $game = $this->model('Game');
-    }    
 }
-
-

@@ -10,12 +10,12 @@ class User {
 
     // Get all users
     public function getAllUsers() : array {
-        return $this->db->select("SELECT id, username FROM users");
+        return $this->db->select("SELECT id, username FROM players");
     }
 
     // Remove user by ID
     public function removeUser(int $id) : bool {
-        return $this->db->remove("DELETE FROM users WHERE id = :id",
+        return $this->db->remove("DELETE FROM players WHERE id = :id",
             ["id" => $id]);
     }
 

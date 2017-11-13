@@ -10,6 +10,7 @@ class Controller {
     }
 
     protected function model(string $model) {
+
         require_once "app/models/" . $model . ".php";
         return new $model($this->db);
     }

@@ -70,7 +70,7 @@ function roll(){
 	}
 
 	function kelk(){
-		$.post("../Dice/game",
+		$.post("toDB",
 		{
 			result: total,
 
