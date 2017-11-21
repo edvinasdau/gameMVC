@@ -50,15 +50,14 @@ class Dice extends Controller {
     public function toDB() {
        $game = $this->model('Game');
      
-       echo $game->storeResult("Fake user", $_POST['result'], $_SERVER['REMOTE_ADDR']);
+       echo $game->storeResult($_SESSION['username'], $_POST['result'], $_SERVER['REMOTE_ADDR']);
 
    }
 
    public function play() {
 
-        $data['title'] = "Dice game";
-
-         $this->view("dice/play", $data);
+        $data['body'] = "Dice game<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore illum non quod suscipit tempora temporibus. Adipisci aliquid, architecto assumenda cumque eius et nobis non nulla perspiciatis quam quo voluptas?";
+        $this->view("dice/play", $data);
    }
 
 }
