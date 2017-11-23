@@ -36,7 +36,7 @@ class User {
 
     // Add user to database
     public function addUser(array $userData) : int {
-        return $this->db->insert("INSERT into players (username, name, surname, email, password) VALUES (:username, :name, :surname, :email, :password)",
+        return $this->db->insert("INSERT into players (username, password) VALUES (:username, :password)",
             $userData
         );
     }

@@ -12,6 +12,7 @@ h1 {
 
 body {
 	background-image: url("/Edvinas/gameMVC/app/views/assets/images/backgr.jpg");
+    background-size: cover;
 }
 
 #log {

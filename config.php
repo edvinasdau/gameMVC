@@ -3,14 +3,9 @@
 define ("CONFIG", [
 
 	// Application
-	"site_path" => "MVC-Game",
+	"site_path" => "http://localhost/Edvinas/gameMVC/",
 	"site_title" => "CA Games",
-	"site_slogan" => "The best gaming platform ever!",
+	"site_slogan" => "The best dice game!",
 
-	// Database
-	"db_hostname" => "localhost",
-	"db_username" => "root",
-	"db_password" => "",
-	"db_name" => "dice",
 
 ]);
