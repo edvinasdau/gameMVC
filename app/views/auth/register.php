@@ -20,11 +20,16 @@
 			</div>
 			<div class="col-sm-4">
 				<form action="http://localhost/Edvinas/gameMVC/auth/reg" method="POST">
-					<input id="username" type="text" name="username" placeholder="username">
-					<input id="pw" type="password" name="password" placeholder="password">
-					<input id="pw_r" type="password" name="password_r" placeholder="repeat_password">
-					<input id="reg" type="submit" name="registruotis" class="btn btn-warning" value="Register">
-					<a href="login.php" class="btn btn-success">Login</a>
+				<div class="form-group">
+					<input name="username" class="form-control form-control-lg" placeholder="Username" type="text">
+					
+					<input name="password" class="form-control" placeholder="Password" type="password">
+					<input name="password_r" class="form-control" placeholder="Password (repeat)" type="password">
+			
+					<button type="submit" class="btn btn-warning btn-block">Register</button>
+
+					<a class="btn btn-sm btn-outline-success btn-block" href="http://localhost/Edvinas/gameMVC/auth/loginForm">Login</a>
+				</div>
 				</form>
 			</div>
 		</div>

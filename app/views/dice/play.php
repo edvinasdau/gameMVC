@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	  <title><?= $data['title']; ?></title>
+	  <title>Dice game !</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
 			</div>
 			<div class="col-sm-4">
 				<form method="POST">
-					<a href="/Edvinas/gameMVC/app/views/dice/logout" class="btn btn-danger">Logout</a><br><br>
+					<a href="/Edvinas/gameMVC/auth/logout" class="btn btn-danger">Logout</a><br><br>
 					<a href="/Edvinas/gameMVC/stats" class="btn btn-info">Stats</a>
 				</form>
 			</div>

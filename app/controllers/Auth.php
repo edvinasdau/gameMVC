@@ -28,7 +28,7 @@
 	     	$_SESSION['user_id'] = $userData[0]['id'];
 
 		     // Redirect to Home/Index
-		     header("Location: /" . CONFIG['site_path'] );
+		     header("Location: /Edvinas/gameMVC/dice/play" );
 
 	     } else {
 

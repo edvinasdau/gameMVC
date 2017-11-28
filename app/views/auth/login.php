@@ -14,20 +14,35 @@
 	<div class="container-fluid">
 		<div id="header" class="row">
 			<h1>Dice game</h1>
+			<?php
+
+			if ($this->errors) {
+				foreach ($this->errors as $error) {
+					echo "<div class='alert alert-danger'>" . $error . "</div>";
+				}
+			}
+			if ($this->messages) {
+				foreach ($this->messages as $message) {
+					echo "<div class='alert alert-success'>" . $message . "</div>";
+				}
+			}
+
+			?>
 		</div>
 		<div id="log" class="row">
 			<div class="col-sm-8">
 			</div>
 			<div class="col-sm-4">
-				<form action="http://localhost/Edvinas/gameMVC/app/views/auth/login" method="POST">
-					<input type="text" name="username" placeholder="username">&nbsp
-					<input type="password" name="password" placeholder="password">&nbsp
-					<button class="btn btn-success">Login</button><br>
-					<a href="http://localhost/Edvinas/gameMVC/auth/regForm" class="btn btn-warning">Register</a>
+				<form action="http://localhost/Edvinas/gameMVC/auth/login" method="POST">
+					<input name="username" class="form-control form-control-lg" placeholder="Username" type="text">
+					<input name="password" class="form-control" placeholder="Password" type="password">
+					<button type="submit" class="btn btn-success btn-block">Login</button>
 				</form>
-			</div>
+				<br><a class="btn btn-sm btn-outline-warning btn-block" href="http://localhost/Edvinas/gameMVC/auth/regForm">Register</a>
+			</form>
 		</div>
 	</div>
+</div>
 
 </body>
 </html>

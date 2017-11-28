@@ -20,7 +20,7 @@ class Database {
         }
     }
     // Select
-    public function select(string $sql, array $param = []) : array {
+  public function select(string $sql, array $param = []) : array {
         // example SELECT * FROM users WHERE id = :id
         $statement = $this->connection->prepare($sql);
         // example $param = ["id" => 666];

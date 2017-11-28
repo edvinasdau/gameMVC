@@ -35,7 +35,7 @@ public function getTopPlayers(int $count): array
 }
 
 
-public function storeResult(string $username, string $result, string $ip) : int
+public function storeResult(string $username, string $result, string $ip)
 {
     return $this->db->insert("INSERT INTO stats (username, result, ip) VALUES (:username, :result, :ip)",
        ["username" => $username, "result" => $result, "ip" => $ip]);
